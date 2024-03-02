@@ -6,7 +6,7 @@ node{
     }
 
     stage('Build image') {
-        app = docker.build("xavki/nginx")
+        app = docker.build("dounmogni/nginx")
     }
     stage('Run image') {
        docker.image('dounmogni/nginx').withRun('-p 80:80'){
